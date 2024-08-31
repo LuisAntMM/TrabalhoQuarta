@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório 1</title>
+    <link rel="stylesheet" href="style.css">
+ <style>
+    .img-left {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px; 
+    height: auto;
+}
+
+.img-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 100px; 
+    height: auto;
+}
+ </style>
+</head>
+<body>
+    <header>
+        <h1>Relatório 1 04/09</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="relatorios.html">Relatórios</a></li>
+                <li><a href="notas.html">Notas Gerais</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <div>
+            <img src="placa-de-circuito.png" alt="Imagem Esquerda" class="img-left">
+            <img src="o-circuito.png" alt="Imagem Direita" class="img-right">
+        </div>
+
+        <p>Aqui você verá os relatórios.</p>
+
+        <label for="relatorios">Relatórios:</label>
+        <select id="relatorios" name="relatorios" onchange="mudarRelatorio()">
+            <option value="">Selecione um relatório</option>
+            <option value="relatorio2.html">Relatório 2</option>
+            <option value="relatorio3.html">Relatório 3</option>
+            <option value="relatorio4.html">Relatório 4</option>
+        </select>
+
+        <div>
+            <h3>Resumo do projeto</h3>
+            <p>
+                O projeto abordado tem como foco o controle da intensidade luminosa de um LED por
+                meio de um potenciômetro conectado a um Arduino. O objetivo principal é entender como um
+                componente variável, o potenciômetro, pode ser integrado a um microcontrolador para ajustar a
+                luminosidade do LED em tempo real. O método utilizado envolveu a montagem do circuito e a
+                programação do Arduino para que fosse possível ajustar a intensidade da luz. Os resultados
+                mostraram que a intensidade luminosa variava conforme a posição do potenciômetro,
+                demonstrando a eficácia do controle. A discussão inclui a análise da resposta do LED a
+                diferentes valores do potenciômetro e a precisão do ajuste luminoso.
+            </p>
+        </div>
+
+        <div style="margin-top: 20px;">
+            <h2>Vídeo do projeto:</h2>
+            <video width="560" height="315" controls>
+                <source src="Video.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+
+        <div style="margin-top: 20px;">
+            <a href="https://drive.google.com/file/d/1Q97KME6e_5pJuLkWDGaO4Pml26StsB3b/view?usp=drive_link" target="_blank">
+                Link do relatório completo
+            </a>
+        </div>
+    </main>
+
+    <script>
+        function mudarRelatorio() {
+            const select = document.getElementById('relatorios');
+            const selectedValue = select.value;
+            if (selectedValue) {
+                window.location.href = selectedValue;
+            }
+        }
+    </script>
+</body>
+</html>
+
+
