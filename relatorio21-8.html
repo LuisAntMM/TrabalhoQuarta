@@ -3,52 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relatórios</title>
+    <title>Relatório 1</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .img-center-bottom {
-            position: absolute;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 300px; 
-            height: auto;
-        }
-        .img-left {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        width: 100px; 
-        height: auto;
-    }
-    
-    .img-right {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        width: 100px; 
-        height: auto;
-    }
-     </style>
+ <style>
+    .img-left {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px; 
+    height: auto;
+}
+
+.img-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 100px; 
+    height: auto;
+}
+ </style>
 </head>
 <body>
     <header>
-        <h1>Relatórios</h1>
+        <h1>Relatório 21/08</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="relatorios.html">Relatórios</a></li>
-                <li><a href="notas.html">Grupo</a></li>
+                <li><a href="notas.html">Notas Gerais</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        
         <div>
             <img src="placa-de-circuito.png" alt="Imagem Esquerda" class="img-left">
             <img src="o-circuito.png" alt="Imagem Direita" class="img-right">
         </div>
+
         <p>Aqui você verá os relatórios.</p>
-        
+
         <label for="relatorios">Relatórios:</label>
         <select id="relatorios" name="relatorios" onchange="mudarRelatorio()">
             <option value="">Selecione um relatório</option>
@@ -58,8 +52,26 @@
             <option value="relatorio25-9.html">Relatório 25/09</option>
             <option value="relatorio9-10.html">Relatório 9/10</option>
             <option value="relatorio16-10.html">Relatório 16/10</option>
-    
         </select>
+
+        <div>
+            <h3>Resumo do projeto</h3>
+            <p>
+                Neste projeto, foi desenvolvido um semáforo utilizando um Arduino Uno e três LEDs,
+representando as luzes vermelha, amarela e verde. O objetivo foi demonstrar o controle de
+fluxo de tráfego de forma simples, utilizando conceitos básicos de programação e eletrônica. O
+semáforo foi programado para alternar as luzes de maneira sequencial, simulando o
+funcionamento real de um sinal de trânsito.
+            </p>
+        </div>
+
+      
+
+        <div style="margin-top: 20px;">
+            <a href="https://drive.google.com/file/d/1bsjwK6w8YORgHFrzaDjf5nKloogIkG0H/view?usp=sharing" target="_blank">
+                Link do relatório completo
+            </a>
+        </div>
     </main>
 
     <script>
@@ -71,6 +83,5 @@
             }
         }
     </script>
-    <img src="logo-anhanguera.png" alt="Imagem Centralizada" class="img-center-bottom">
 </body>
 </html>
